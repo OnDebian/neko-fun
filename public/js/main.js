@@ -52,7 +52,8 @@ function genConfig(domain, time) {
 			"url": "$input$",
 			"domain": "${domain}",
 			"time": "${time}"
-		}
+		},
+		"URL": "https://$json:data.domain$/$json:data.uid$"
 	}
 	`;
 	let a = document.createElement("a");
