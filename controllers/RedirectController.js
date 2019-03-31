@@ -7,7 +7,7 @@ module.exports = {
 		try {
 			let uidInfos = await urlc.getUID(req.params.uid);
 			if(!uidInfos) return next();
-			if(req.hostname !== uidInfos.domain) return next();
+			//if(req.hostname !== uidInfos.domain) return next();
 			await urlc.update(req.params.uid, uidInfos.used);
 			res.redirect(uidInfos.redirect);
 		} catch (err) {
