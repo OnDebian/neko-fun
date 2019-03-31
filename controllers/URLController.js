@@ -32,13 +32,15 @@ module.exports = {
 	},
 
 	uniqURL: async (domain) => {
-		let retries = config.global.retries;
-		do {
-			if (retries-- == 0) return false;
-			var uid = await utils.randomstr(config.global.uidlength);
-			var count = await db("urls").where({ url_uid: uid, domain: domain }).count({ all: "*" });
-		} while (count[0].all !== 0);
-		return uid;
+		return new Promise((resolve, reject) => {
+			let retries = config.global.retries;
+			do {
+				if (retries-- == 0) return resolve(false);
+				var uid = await utils.randomstr(config.global.uidlength);
+				var count = await db("urls").where({ url_uid: uid, domain: domain }).count({ all: "*" });
+			} while (count[0].all !== 0);
+			return resolve(uid);
+		})
 	},
 
 	delete: () => {
