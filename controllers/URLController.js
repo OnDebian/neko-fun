@@ -32,7 +32,7 @@ module.exports = {
 	},
 
 	uniqURL: async (domain) => {
-		return new Promise((resolve, reject) => {
+		return new Promise(async (resolve, reject) => {
 			let retries = config.global.retries;
 			do {
 				if (retries-- == 0) return resolve(false);
