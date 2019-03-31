@@ -3,6 +3,6 @@ const
 	redirect = require("../controllers/RedirectController"),
 	router = require("express").Router();
 
-router.get("/", (req, res, next) => redirect.send(req, res, next));
+router.get(`/:uid([0-9a-z]{${config.global.uidlength}})`, (req, res, next) => redirect.send(req, res, next));
 
 module.exports = router;

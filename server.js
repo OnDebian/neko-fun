@@ -31,7 +31,7 @@ app.all("*", (req, res, next) => {
 });
 
 app.use("/api", routes.api);
-app.use(`/:uid([0-9a-z]{${config.global.uidlength}})`, routes.redirect);
+app.use("/", routes.redirect);
 app.use("/", routes.static);
 
 app.all("*", (req, res) => res.status(404).render("404", { page: "404" }));
