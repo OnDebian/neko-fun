@@ -1,0 +1,29 @@
+{
+  "name": "neko.fun",
+  "version": "1.0.0",
+  "description": "Neko.fun is a free and opensource url shortener",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js",
+    "web": "node server.js",
+    "start": "node main.js"
+  },
+  "keywords": [
+    "neko.fun",
+    "opensource",
+    "free",
+    "nodejs",
+    "express",
+    "url",
+    "short"
+  ],
+  "author": "OnDebian",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "knex": "^0.16.3",
+    "mysql": "^2.16.0",
+    "nunjucks": "^3.2.0"
+  }
+}

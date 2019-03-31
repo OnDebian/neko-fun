@@ -1,0 +1,37 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<form class="sharex">
+    <div class="box">
+        <h2 class="subtitle"><a href="https://getsharex.com/" target="blank">ShareX</a> - Get config</h2>
+        <div class="field">
+            <div class="control">
+                <div class="select is-primary">
+                    <select name="time">
+                        <option value="24">Delete after 24 hours</option>
+                        <option value="7">Delete after 7 days</option>
+                        <option value="infini">Do not delete</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+                <div class="select is-primary">
+                    <select name="domains">
+                        {% for domain in domains %}
+                        <option value="{{ domain }}">With {{ domain }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+                <button id="genconfig" class="button is-primary">Generate Config</button>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock content %}

@@ -1,0 +1,242 @@
+/*****************
+*				 *
+*    Neko.fun    *
+*				 *
+*****************/
+
+*:not(i) {
+	font-family: 'Quicksand', sans-serif;
+}
+
+html, body {
+	background-color: #442e2e;
+}
+
+.title, .subtitle, .foot a {
+	color: whitesmoke;
+}
+
+.logo {
+	height: 200px;
+	width: 200px;
+	background-image: url("../img/logo.png");
+	background-position: top;
+	background-size: cover;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 1.2rem;
+	border-radius: 50%;
+	transition: 0.5s;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.logo:hover {
+	height: 230px;
+	width: 230px;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+
+.select.is-primary select, input.input.is-primary {
+    border-color: #FDA1A1 !important;
+}
+
+.select.is-primary:not(:hover)::after {
+    border-color: #FDA1A1 !important;
+}
+
+.select:not(.is-multiple):not(.is-loading):hover::after {
+    border-color: #9b6262 !important;
+}
+
+.select.is-primary select:focus, .select.is-primary select.is-focused, .select.is-primary select:active, .select.is-primary select.is-active {
+    box-shadow: 0 0 0 0.125em rgba(253, 161, 161, 0.25);
+}
+
+input.input.is-primary:focus, input.input.is-primary.is-focused, input.input.is-primary:active, input.input.is-primary.is-active {
+    box-shadow: 0 0 0 0.125em rgba(253, 161, 161, 0.25);
+}
+
+.shorten {
+	width: 250px;
+	margin: auto;
+}
+
+.shorten * {
+	width: 100%;
+	text-align: center;
+}
+
+.shorten .box {
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	background-color: whitesmoke;
+}
+
+.shorten .box .url-shorten .subtitle {
+	text-shadow: none;
+	font-size: 15px;
+	margin-bottom: 0.5rem;
+	display: block;
+	color: #442e2e;
+	font-weight: bold;
+}
+
+.shorten .box .url-shorten progress::-webkit-progress-value {
+	background-color: #FDA1A1;
+}
+
+.shorten .box .url-shorten progress[value] {
+	background-color: #FDA1A1;
+}
+
+.shorten .box .url-shorten:not(:first-child) {
+	margin-top: 1.25rem;
+}
+
+.shorten input::placeholder, .shorten input {
+	color: black;
+	text-align: left;
+}
+
+.shorten button, .shorten select, .shorten input {
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.title {
+	text-shadow: 0px 0px 15px rgba(0,0,0,0.75);
+	-moz-text-shadow: 0px 0px 15px rgba(0,0,0,0.75);
+	-webkit-text-shadow: 0px 0px 15px rgba(0,0,0,0.75);
+}
+
+.subtitle {
+	text-shadow: 0px 0px 15px rgba(0,0,0,0.75);
+}
+
+.button.is-primary {
+    background-color: #FDA1A1;
+    border-color: transparent;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.button.is-primary:active, .button.is-primary.is-active {
+    background-color: #9b6262;
+    border-color: transparent;
+	color: #fff;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+
+.button.is-primary:hover, .button.is-primary.is-hovered {
+    background-color: #9b6262;
+    border-color: transparent;
+	color: #fff;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+
+.button.is-primary:focus:not(:active), .button.is-primary.is-focused:not(:active) {
+    box-shadow: 0 0 0 0.125em rgba(253, 161, 161, 0.25);
+}
+
+#count {
+	margin-top: -1.25rem;
+}
+
+.foot a i {
+	margin-bottom: 1.5rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 35px;
+	transition: 0.3s;
+	text-shadow: 0px 0px 15px rgba(0,0,0,0.75);
+	-moz-text-shadow: 0px 0px 15px rgba(0,0,0,0.75);
+	-webkit-text-shadow: 0px 0px 15px rgba(0,0,0,0.75);
+}
+
+.foot a i:hover {
+	transform: scale(1.3);
+	text-shadow: 0px 0px 30px rgba(0,0,0,0.75);
+	-moz-text-shadow: 0px 0px 30px rgba(0,0,0,0.75);
+	-webkit-text-shadow: 0px 0px 30px rgba(0,0,0,0.75);
+}
+
+.is-q.message.is-primary .message-body {
+    border-color: #FDA1A1;
+    color: #021310;
+}
+
+.is-q.message.is-primary {
+    background-color: #ecf7ff;
+	text-shadow: 0px 0px 15px rgba(0,0,0,0.75);
+	-moz-text-shadow: 0px 0px 15px rgba(0,0,0,0.75);
+	-webkit-text-shadow: 0px 0px 15px rgba(0,0,0,0.75);
+	transition: 0.3s;
+	color: #9b6262;
+}
+
+.is-q.message.is-primary:hover {
+    background-color: #ecf7ff;
+	transform: scale(1.03);
+	text-shadow: 0px 0px 30px rgba(0,0,0,0.75);
+	-moz-text-shadow: 0px 0px 30px rgba(0,0,0,0.75);
+	-webkit-text-shadow: 0px 0px 30px rgba(0,0,0,0.75);
+}
+
+.is-q.message.is-primary * {
+	text-shadow: none;
+	text-align: left;
+}
+
+.is-q.message.is-primary .subtitle {
+	color: #9b6262;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.sharex {
+	width: 250px;
+	margin: auto;
+}
+
+.sharex:not(:last-child) {
+	margin-bottom: 1.25rem;
+}
+
+.sharex * {
+	width: 100%;
+	text-align: center;
+}
+
+.sharex .box {
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	background-color: whitesmoke;
+}
+
+.sharex .box .subtitle {
+	text-shadow: none;
+	color: #9b6262;
+}
+
+code {
+	white-space: pre;
+	text-align: left !important;
+	display: block;
+	border-radius: 6px;
+	padding: 15px 25px;
+	background-color: #9b6262;
+	font-family: 'FiraCode', sans-serif;
+	color: black;
+	color: whitesmoke;
+}

@@ -1,0 +1,40 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<form class="shorten" action="javascript:void()">
+	<div class="field">
+		<div class="control">
+			<input name="url" class="input is-primary" type="text" placeholder="URL to shorten">
+		</div>
+	</div>
+	<div class="field">
+		<div class="control">
+			<div class="select is-primary">
+				<select name="time">
+					<option value="24">Delete after 24 hours</option>
+					<option value="168">Delete after 7 days</option>
+					<option value="infini">Do not delete</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="field">
+		<div class="control">
+			<div class="select is-primary">
+				<select name="domain">
+					{% for domain in domains %}
+					<option value="{{ domain }}">With {{ domain }}</option>
+					{% endfor %}
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="field">
+		<div class="control">
+			<button id="shorten" class="button is-primary">Shorten URL</button>
+		</div>
+	</div>
+	<div id="shorten-urls" class="box" style="display: none">
+	</div>
+</form>
+{% endblock content %}

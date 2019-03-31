@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Metadata -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Sharex.Domaines is a file uploader free and opensource">
+	<meta name="keywords" content="neko.fun,url,shortener,temporary,ondebian">
+	<title>Neko.fun :: {{ page }}</title>
+	<link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
+
+	<!-- CSS --> 
+	<link rel="stylesheet" href="/assets/css/loader.css">
+
+	<!-- OG Tags -->
+	<meta property="og:title" content="Neko.fun - {{page}}">
+	<meta property="og:site_name" content="Neko.fun">
+	<meta property="og:url" content="https://neko.fun">
+	<meta property="og:description" content="Neko.fun is a free and opensource url shortener">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://neko.fun/assets/img/logo.png">
+
+	<!-- Theme color -->
+	<meta name="theme-color" content="#FDA1A1">
+</head>
+</head>
+
+<body>
+
+	<section class="hero is-fullheight has-text-centered">
+		<div class="hero-body">
+			<div class="container">
+				<div class="logo"></div>
+				<h1 class="title">
+					Neko.fun <br> Free and opensource url shortener
+				</h1>
+				<div class="foot">
+					<a href="/" title="Home">
+						<i class="fas fa-home"></i>
+					</a>
+					<a href="/faq" title="FAQ">
+						<i class="fas fa-question-circle"></i>
+					</a>
+					<a href="/tools" title="Tools">
+						<i class="fas fa-hammer"></i>
+					</a>
+					<a target="blank" href="https://github.com/osu/yuu" title="Gitub repository">
+						<i class="fab fa-github"></i>
+					</a>
+				</div>
+				{% block content %}{% endblock %}
+			</div>
+		</div>
+	</section>
+
+	<!-- JS -->
+	<script src="/assets/js/jquery-3.3.1.js"></script>
+	<script src="/assets/js/sweetalert2.js"></script>
+	<script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>

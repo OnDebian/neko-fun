@@ -1,0 +1,47 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <h2 class="subtitle">
+        Frequently Asked Questions
+    </h2>
+
+    <article class="message is-primary is-q">
+        <div class="message-body">
+            <h2 class="subtitle">What is Neko.fun?</h2>
+            Neko.fun is an easy to use, open source and completely free unl shotener service. We accept all links, and give you back a shareable link for you to send to others.
+        </div>
+    </article>
+
+    <article class="message is-primary is-q">
+        <div class="message-body">
+            <h2 class="subtitle">Is this service free?</h2>
+            Yes, but if you want to help me, you can make a donnation here :<br>
+            - Patreon :
+            <a target="blank" href="https://www.patreon.com/ondebian">patreon.com/ondebian</a>
+        </div>
+    </article>
+
+    <article class="message is-primary is-q">
+        <div class="message-body">
+            <h2 class="subtitle">Will you keep my links forever?</h2>
+            If you have chose "Do not delete" option, your link keep in Neko.fun.
+        </div>
+    </article>
+
+    <article class="message is-primary is-q">
+        <div class="message-body">
+            <h2 class="subtitle">Which domains can I use?</h2>
+            You can use domains listed below:<br>
+            {{domains.join(", ")}}
+        </div>
+    </article>
+
+    <article class="message is-primary is-q">
+        <div class="message-body">
+            <h2 class="subtitle">How are the shorten URLs going to be determined?</h2>
+            Random
+            {{urllength}}-letter strings will automatically be generated for your shorten URL.<br>
+            If you think that is too short, please contact me by discord (0nDebian#0008) or by email (oniisan[at]waifu[dot]club).
+        </div>
+    </article>
+{% endblock content %}
