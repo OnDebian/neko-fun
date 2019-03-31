@@ -17,6 +17,7 @@ const
 	};
 
 env.express(app);
+app.set("trust proxy");
 app.disable("x-powered-by");
 app.set("view engine", "njk");
 app.use(bodyParser.urlencoded({ extended: true }));
